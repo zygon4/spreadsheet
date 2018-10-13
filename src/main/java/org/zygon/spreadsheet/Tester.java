@@ -16,11 +16,11 @@ public class Tester {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Point point1 = new Point(1, 1);
-        Point point2a = new Point(2, 2);
-        Point point2b = new Point(2, 3);
-        Point sumValuePoint = new Point(3, 3);
-        Point sumValueTotalPoint = new Point(4, 4);
+        Point point1 = new Point(0, 0);
+        Point point2a = new Point(2, 0);
+        Point point2b = new Point(2, 1);
+        Point sumValuePoint = new Point(2, 2);
+        Point sumValueTotalPoint = new Point(3, 3);
 
         Cell.Value value1 = new Cell.Value(10);
         Cell.Value value2a = new Cell.Value(2);
@@ -53,8 +53,8 @@ public class Tester {
 
         List<CellRender> cellRenders = new ArrayList<>();
         cellRenders.add(new CoordCellRender());
-        cellRenders.add(new CellValueRender());
         cellRenders.add(new CellFormulaRender());
+        cellRenders.add(new CellValueRender());
 
         ViewRender viewRender = new ConsoleViewRender();
 

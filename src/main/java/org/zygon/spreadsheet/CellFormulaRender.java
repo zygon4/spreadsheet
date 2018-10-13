@@ -11,6 +11,6 @@ public class CellFormulaRender implements CellRender {
     public String renderCell(Point point, Cell cell, Map<Point, Cell> cellsByPoint) {
         Cell.Value value = cell.getValue();
         String formula = value.getFormula();
-        return formula != null ? formula : "";
+        return formula != null ? formula : "   ";
     }
 }
